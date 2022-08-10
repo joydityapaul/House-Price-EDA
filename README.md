@@ -7,6 +7,7 @@ CORRELATION WITH SALES PRICE
 
 SalePrice Probablity Density Function
 
-![Hist_image](https://user-images.githubusercontent.com/109108274/183963907-14f3188a-3e8e-4d6f-b876-3e1bdf69e35f.png)
+![Hist_1](https://user-images.githubusercontent.com/109108274/183964506-7fec3d63-de41-4149-99a9-e38b7a411aa3.png)
 
+Histogram of diffrent Features
 
