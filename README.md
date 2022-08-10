@@ -69,6 +69,39 @@ A lot of features seems to be correlated between each other but some of them suc
 
 Now for the ones which are less obvious we can see that:
 
-    There is a strong negative correlation between BsmtUnfSF (Unfinished square feet of basement area) and BsmtFinSF2 (Type 2 finished square feet). There is a     definition of unfinished square feet here but as for a house of "Type 2", I can't tell what it really is.
+    There is a strong negative correlation between BsmtUnfSF (Unfinished square feet of basement area) and BsmtFinSF2 (Type 2 finished square feet). There is definition of unfinished square feet here but as for a house of "Type 2", I can't tell what it really is.
     
     HalfBath/2ndFlrSF is interesting and may indicate that people gives an importance of not having to rush downstairs in case of urgently having to go to the bathroom.
+    
+CONCLUSION
+
+We can conclude that, by essence, some of those features may be combined between each other in order to reduce the number of features (1stFlrSF/ TotalBsmtSF, GarageCars/GarageArea) and others indicates that people expect multiples features to be packaged together.
+
+QUANTATIVE TO QUANTITATIVE RELATIONSHIP
+
+![reg1](https://user-images.githubusercontent.com/109108274/183979730-ab9c4524-f2fc-4470-8c47-7619d027ac6c.png)
+
+CONCLUSION 
+
+We can see that features such as TotalBsmtSF, 1stFlrSF, GrLivArea have a huge Spread. This shows that the as the SalePrice increases, Total Basement Area, 1st floor area size increases too and in a same as all these feature have approximately 1 as correlation between them.
+
+CATEGORICAL TO QUANTITATIVE RELATIONSHIP
+
+There is 39 non numerical features including:
+['MSZoning', 'Street', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'GarageType', 'GarageYrBlt', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'SaleType', 'SaleCondition']
+
+Box Plot of Basement Exposure to SalePrice to find outlier
+
+![box1](https://user-images.githubusercontent.com/109108274/183981351-210aa079-a3c9-4f24-9e53-564875173b0b.png)
+
+Box Plot of Sale Condition to SalePrice to find outlier
+
+![box2](https://user-images.githubusercontent.com/109108274/183981356-cc806f27-d0b7-4b48-8052-57211f2d8e30.png)
+
+Count Plot of Features
+
+![Count](https://user-images.githubusercontent.com/109108274/183983127-4ed340a6-b427-4d51-ba58-58931cde85c0.png)
+
+CONCLUSION 
+
+We can see that some categories are predominant for some features such as Utilities, Heating, GarageCond, Functional... These features may not be relevant for our predictive model
