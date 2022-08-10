@@ -1,4 +1,4 @@
-Exploratory Data Analysis
+## Exploratory Data Analysis
 
 CORRELATION WITH SALES PRICE
 
